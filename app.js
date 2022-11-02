@@ -94,3 +94,22 @@ console.log("p: "+ p);
 console.log("k: "+ k);
 
 console.log(Boolean(45>44));
+
+const myCar ={
+    make: 'Ford',
+    model:'Mustang',
+    year: 1965,
+    color:'Black',
+}
+console.log(myCar);
+
+myCar.color='Green';
+console.log(myCar);
+
+myCar.sunRoof=false;
+console.log(myCar);
+
+myCar.age= function(current){
+    console.log(current - this.year);
+}
+myCar.age(2022);
